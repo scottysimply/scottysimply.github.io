@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development I</title>
+
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/df3adf8e9b.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function toggleCSS() {
+            for ( i=0; i<document.styleSheets.length; i++) {
+                if (document.styleSheets.item(i).disabled) {
+                    void(document.styleSheets.item(i).disabled=false);
+                }
+                else {
+                    void(document.styleSheets.item(i).disabled=true);
+                }
+
+            }
+        }
+
+    </script>
+</head>
+<!--  onload="toggleCSS()" -->
+<body>
+    <nav>
+        <input type="checkbox" id="burger-check">
+        <label for="burger-check" class="burger">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </label>
+        <h2 class="flex-1"><a href="index.html" class="nav-link">Landing</a></h2>
+        <div class="overflow">
+            <p class="flex-2"><a href="digital_literacy.html" class="nav-link">Digital Literacy</a></p>
+            <p class="flex-3"><a href="web_dev.html" class="nav-link">Web Dev I</a></p>
+            <p class="flex-4"><a href="cloud_fundamentals.html" class="nav-link">Cloud Fundamentals</a></p>
+            <p class="flex-5"><a href="intro_programming.html" class="nav-link">Intro to Programming</a></p>
+            <p class="flex-6"><a href="composition_1.html" class="nav-link">Comp I</a></p>
+            <p class="flex-7"><a href="myself.html" class="nav-link">About Me</a></p>
+        </div>
+    </nav>
+
+    <div id="main-content">
+        <h1 class="title">Web Development I</h1>
+        <p class="below-title">This course is one of my favorites, because we're (mostly) given creative freedom over what we can do (with a really great instructor to boot). It's also the hardest for me, because I lack any sort of creativity. It's still great to be able to pretend I know what I'm doing.</p>
+        
+        <div class="section">
+            <h2 class="heading">HTML</h2>
+            <p class="paragraph">When the course started, I didn't know what a CSS was. This is what the first few websites looked like. White. Barren. Got-dang Times New Roman 12pt (I think). It's nice for experimenting with HTML tags, though. The default style is so barren, it can kind of show off what tags are capable of.</p>
+        </div>
+
+        <div class="section">
+            <table class="example-table">
+                <tr>
+                    <th>We learned</th>
+                    <td>the basics.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>How to</th>
+                    <td>use headers...</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>And created</th>
+                    <td>tables of</td>
+                    <td>varying size.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <form method="get" action="submit.html" target="_blank" id="exampleForm">
+                <fieldset>
+                    <label for="text1">We created some forms.</label>
+                    <input type="text" name="text1" id="text1" value="And validated them, too." placeholder="And validated them, too.">
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2 class="heading">CSS</h2>
+            <p class="paragraph">Naturally, we can't do any good web development without styling. Press this button to enable CSS: <button onclick="toggleCSS()">Enable</button></p>
+            <p class="paragraph">I'm not the greatest artist. I actually failed it in 8th grade, but I'm not sure if that was because I never tried, or if I was that bad at art.</p>
+            <p class="paragraph">Regardless, I like to imagine I'm halfway decent at styling. At least it's better than the white void.</p>    
+        </div>
+
+        <div class="section">
+            <h2 class="heading">Javascript</h2>
+            <p class="paragraph">This course never covered Javascript; not much, anyway. I've used some similar ECMAScript languages before though (see About Me), so I'm a little bit experienced at it. That's how the whole "enabling" Javascript thing worked above. This resume is actually for a grade, so I hope I don't get marked down for "no CSS." I just felt like being witty, and that's what matters.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
